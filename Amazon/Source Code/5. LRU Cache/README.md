@@ -45,4 +45,7 @@ Constraints:
 
 **Approach:**
     
-    Use Linked List to maintain order and insert in O(1) and Unordered map to insert, delete, search content in O(1) and also make Linked List deletion to O(1) by storing the address of the node as it's value.
+    Use Linked List to maintain order and insert in O(1) 
+    and Unordered map to insert, delete, search content in O(1) 
+    and also make Linked List deletion to O(1) by 
+    storing the address of the node as it's value.
