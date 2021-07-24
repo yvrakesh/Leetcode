@@ -4,6 +4,7 @@ Leetcode Questions Practice
 |#|Title|Solution|Companies|Difficulty|Tags|Acceptance Rate|
 | - | - | - | - | - |  - | - |
 |4|[Two Sum](https://leetcode.com/problems/two-sum/)|[Code](https://github.com/yvrakesh/Leetcode/tree/main/Amazon/Source%20Code/4.%20Two%20Sum)|Amazon|Easy|Array, Hash Table|47.3%|
+|138|[Copy List with Random Pointers](https://leetcode.com/problems/copy-list-with-random-pointer/)|[Code](https://github.com/yvrakesh/Leetcode/tree/main/Amazon/Source%20Code/8.%20Copy%20List%20with%20Random%20Pointer)|Amazon|Medium|Hash Table, Linked List|43.0%|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/)|[Code](https://github.com/yvrakesh/Leetcode/tree/main/Amazon/Source%20Code/5.%20LRU%20Cache)|Amazon|Medium|Hash Table, LinkedList, Design, Doubly Linked List|37.4%|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Code](https://github.com/yvrakesh/Leetcode/tree/main/Amazon/Source%20Code/2.%20Number%20of%20Islands)|Amazon|Medium|Array, DFS, BFS, Union Find, Matrix|50.7%|
 |819|[Most Common Word](https://leetcode.com/problems/most-common-word/)|[Code](https://github.com/yvrakesh/Leetcode/tree/main/Amazon/Source%20Code/7.%20Most%20Common%20Word)|Amazon|Easy|Hash Table, String|45.4%|
