@@ -1,5 +1,7 @@
     Accepted        510,725
     Submissions     783,914
+[Question Link](https://leetcode.com/problems/k-closest-points-to-origin/)  &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/Amazon/Source%20Code/6.%20K%20Closest%20Points%20to%20Origin/sol.cpp)
+
 Approach:
 
     Time Complexity : O(k + n*logn) => O(n*logn)
