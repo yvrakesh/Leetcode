@@ -2,6 +2,12 @@
     Submissions     407,942
 [Question Link](https://leetcode.com/problems/reorder-data-in-log-files/)  &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/Amazon/Source%20Code/1.%20Reorder%20Data%20in%20Log%20Files/sol.cpp)
 
+    Time Complexity : O(m*n*logn)
+
+    Space Complexity : O(m*n)
+
+    Where m -> Max number of words in a single log 
+          n -> Number of logs
 Approach:
 1. Divide each of the string into two parts Identifier and content.
 2. Store it in a vector pair with 1st element as content and 2nd as identifier based on identfier as either letter log or digit log.
