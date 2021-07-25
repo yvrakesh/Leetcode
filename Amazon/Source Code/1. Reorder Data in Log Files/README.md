@@ -1,6 +1,6 @@
-    Accepted    225,229
-    Submissions 407,942
-[Question Link](https://leetcode.com/problems/reorder-data-in-log-files/)
+    Accepted        225,229
+    Submissions     407,942
+[Question Link](https://leetcode.com/problems/reorder-data-in-log-files/)  &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/Amazon/Source%20Code/1.%20Reorder%20Data%20in%20Log%20Files/sol.cpp)
 
 Approach:
 1. Divide each of the string into two parts Identifier and content.
