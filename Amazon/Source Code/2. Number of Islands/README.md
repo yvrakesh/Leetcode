@@ -1,6 +1,6 @@
     Accepted        1,129,116
     Submissions     2,226,012
-[Question Link](https://leetcode.com/problems/number-of-islands/) &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/tree/main/Amazon/Source%20Code/2.%20Number%20of%20Islands)
+[Question Link](https://leetcode.com/problems/number-of-islands/) &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/Amazon/Source%20Code/2.%20Number%20of%20Islands/sol.cpp)
 
     Time Complexity : O(n*m)  [Actually it's 5*n*m]
 
