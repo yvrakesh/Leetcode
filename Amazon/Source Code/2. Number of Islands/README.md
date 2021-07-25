@@ -1,34 +1,14 @@
-Given an m x n 2D binary grid grid which represents a map of **'1'**s (land) and **'0'**s (water), return the number of islands.
+    Accepted        1,129,116
+    Submissions     2,226,012
+[Question Link](https://leetcode.com/problems/number-of-islands/) &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/tree/main/Amazon/Source%20Code/2.%20Number%20of%20Islands)
 
-An **island** is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+    Time Complexity : O(n*m)  [Actually it's 5*n*m]
 
- 
+    Space Complexity : O(1)
+Approach:
+1. Traverse through the matrix.
+2. If the element is not visited and it's value is 1,
+3. Make it visited and perform DFS on four directions (Top, Left, Bottom, Right).
+4. Consider boundary cases and skip DFS for out of bound elements.
 
-***Example 1***:
 
-    Input: grid = [
-    ["1","1","1","1","0"],
-    ["1","1","0","1","0"],
-    ["1","1","0","0","0"],
-    ["0","0","0","0","0"]
-    ]
-    Output: 1
-Example 2:
-
-    Input: grid = [
-    ["1","1","0","0","0"],
-    ["1","1","0","0","0"],
-    ["0","0","1","0","0"],
-    ["0","0","0","1","1"]
-    ]
-    Output: 3
- 
-
-Constraints:
-
-    m == grid.length
-    n == grid[i].length
-    1 <= m, n <= 300
-    grid[i][j] is '0' or '1'.
-    Accepted    1,129,116
-    Submissions 2,226,012
