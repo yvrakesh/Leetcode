@@ -1,6 +1,8 @@
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=yvrakesh.Leetcode.code.0937)
+
     Accepted        225,229
     Submissions     407,942
-[Question Link](https://leetcode.com/problems/reorder-data-in-log-files/)  &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/Amazon/Source%20Code/1.%20Reorder%20Data%20in%20Log%20Files/sol.cpp)
+[Question Link](https://leetcode.com/problems/reorder-data-in-log-files/)  &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0937/sol.cpp)
 
     Time Complexity : O(m*n*logn)
 
