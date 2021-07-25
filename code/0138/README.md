@@ -1,7 +1,9 @@
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=yvrakesh.Leetcode-0138)
+
     Accepted        600,351
     Submissions     1,394,991
 
-[Question Link](https://leetcode.com/problems/copy-list-with-random-pointer/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/Amazon/Source%20Code/8.%20Copy%20List%20with%20Random%20Pointer/sol.cpp)
+[Question Link](https://leetcode.com/problems/copy-list-with-random-pointer/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0138/sol.cpp)
 
 Naive Approach:
     
