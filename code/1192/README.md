@@ -1,6 +1,7 @@
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=yvrakesh.Leetcode-1192)
     Accepted        122,726
     Submissions     237,326
-[Question Link](https://leetcode.com/problems/critical-connections-in-a-network/)&emsp;[Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/Amazon/Source%20Code/3.%20Critical%20Connections%20in%20a%20Network/sol.cpp)
+[Question Link](https://leetcode.com/problems/critical-connections-in-a-network/)&emsp;[Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/1192/sol.cpp)
 
 **Use case of this Question**:
 
