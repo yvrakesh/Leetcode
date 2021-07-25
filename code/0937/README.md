@@ -1,4 +1,4 @@
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=yvrakesh.Leetcode.code.0937)
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=yvrakesh.Leetcode-0937)
 
     Accepted        225,229
     Submissions     407,942
