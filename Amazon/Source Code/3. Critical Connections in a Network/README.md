@@ -1,5 +1,7 @@
     Accepted        122,726
     Submissions     237,326
+[Question Link](https://leetcode.com/problems/critical-connections-in-a-network/)&emsp;[Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/Amazon/Source%20Code/3.%20Critical%20Connections%20in%20a%20Network/sol.cpp)
+
 **Use case of this Question**:
 
     Bridges in a network can represent critical wires or connections which have to be prevented by adding connections or redesigning so as to increase its reliability (Since failure of those connections disconnects corresponding nodes from the network). 
