@@ -1,8 +1,8 @@
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=yvrakesh.Leetcode-0001)
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=yvrakesh.Leetcode-0146)
 
     Accepted        813,610
     Submissions     2,175,086
-[Question Link](https://leetcode.com/problems/lru-cache/)   &emsp;  [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/Amazon/Source%20Code/5.%20LRU%20Cache/sol.cpp)
+[Question Link](https://leetcode.com/problems/lru-cache/)   &emsp;  [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0146/sol.cpp)
 
 **Approach:**
 
