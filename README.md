@@ -1,7 +1,7 @@
 # Leetcode
 Leetcode Questions Practice
 
-|#|Title|Solution|Companies|Difficulty|Tags|Accptce|Likes|
+|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|
 | - | - | - | - | - |  - | - | - |
 |1|[Two Sum](https://leetcode.com/problems/two-sum/)|[Code](https://github.com/yvrakesh/Leetcode/tree/main/code/0001/)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg" width="30" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Easy](https://img.shields.io/badge/-Easy-green)](Easy)|Array, Hash Table|47.3%|96.8%|
 |138|[Copy List with Random Pointers](https://leetcode.com/problems/copy-list-with-random-pointer/)|[Code](https://github.com/yvrakesh/Leetcode/tree/main/code/0138/)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg" width="30" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Medium](https://img.shields.io/badge/-Medium-orange)](Medium)|Hash Table, Linked List|43.0%|87.0%|
