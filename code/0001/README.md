@@ -20,7 +20,7 @@ Efficient Approach 1 :
 2. Iterate over a loop and check if the target - curr has a valid index.
 3. If then return those two values.
 
-Efficient Approach :
+Efficient Approach 2 :
 
     Time Complexity : O(nlogn) + O(2*n)  => O(nlogn) 
     (For Sorting + For 2 way sum)
