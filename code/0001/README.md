@@ -25,7 +25,7 @@ Efficient Approach 2 :
     Time Complexity : O(nlogn) + O(2*n)  => O(nlogn) 
     (For Sorting + For 2 way sum)
 
-    Space Complexity : O(n)
+    Space Complexity : O(1)
                  
 1. Sort the elements and use two pointers at the extremes.
 2. Get the two values corresponding to that sum.
