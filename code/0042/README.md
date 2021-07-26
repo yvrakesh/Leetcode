@@ -1,4 +1,9 @@
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=yvrakesh.Leetcode-0042)
 
+    Accepted        806,850
+    Submissions     1,534,223
+
+[Question Link](https://leetcode.com/problems/trapping-rain-water/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0042/sol.cpp)   
 
 Naive Approach:
 
