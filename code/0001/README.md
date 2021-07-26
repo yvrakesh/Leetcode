@@ -11,16 +11,16 @@ Brute Force Approach :
     Space Complexity : O(n)
 1. Check if the sum of any two possibilities equal to that number if so then return those two indexes.
 
-Efficient Approach 1 :
+Efficient Approach 1 : Hash Map 
 
     Time Complexity : O(n)
 
     Space Complexity : O(n)
-1. Store value and it's corresponding index.
+1. Store value and it's corresponding index in a hash map(Unordered_map).
 2. Iterate over a loop and check if the target - curr has a valid index.
 3. If then return those two values.
 
-Efficient Approach 2 :
+Efficient Approach 2 :  Two Pointer Approach
 
     Time Complexity : O(nlogn) + O(2*n)  => O(nlogn) 
     (For Sorting + For 2 way sum)
