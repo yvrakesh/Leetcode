@@ -5,7 +5,7 @@
 
 [Question Link](https://leetcode.com/problems/copy-list-with-random-pointer/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0138/sol.cpp)
 
-Naive Approach:
+Naive Approach: Hash Map
     
     Time Complexity : O(n)
 
