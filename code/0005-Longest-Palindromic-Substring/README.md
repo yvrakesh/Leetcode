@@ -3,7 +3,7 @@
     Accepted        1,391,701
     Submissions     4,486,073
 
-[Question Link](https://leetcode.com/problems/longest-palindromic-substring/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0005/sol.cpp)
+[Question Link](https://leetcode.com/problems/longest-palindromic-substring/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0005-Longest-Palindromic-Substring/sol.cpp)
 
 Naive Approach:
 
