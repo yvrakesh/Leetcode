@@ -3,7 +3,7 @@
     Accepted        234,150
     Submissions     468,361
 
-[Question Link](https://leetcode.com/problems/rotting-oranges/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0994/sol.cpp)
+[Question Link](https://leetcode.com/problems/rotting-oranges/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0994-Rotting-Oranges/sol.cpp)
 
 Approach:
 
