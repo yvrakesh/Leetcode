@@ -2,7 +2,7 @@
   
     Accepted        242,467
     Submissions     534,016
-[Question Link](https://leetcode.com/problems/most-common-word/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0819/sol.cpp)
+[Question Link](https://leetcode.com/problems/most-common-word/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0819-Most-Common-Word/sol.cpp)
 
 Approach:
 
