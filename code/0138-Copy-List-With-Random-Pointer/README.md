@@ -3,7 +3,7 @@
     Accepted        600,351
     Submissions     1,394,991
 
-[Question Link](https://leetcode.com/problems/copy-list-with-random-pointer/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0138/sol.cpp)
+[Question Link](https://leetcode.com/problems/copy-list-with-random-pointer/)   &emsp; [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0138-Copy-List-With-Random-Pointer/sol.cpp)
 
 Naive Approach: Hash Map
     
