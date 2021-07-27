@@ -2,7 +2,7 @@
 
     Accepted        813,610
     Submissions     2,175,086
-[Question Link](https://leetcode.com/problems/lru-cache/)   &emsp;  [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0146/sol.cpp)
+[Question Link](https://leetcode.com/problems/lru-cache/)   &emsp;  [Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/0146-LRU-Cache/sol.cpp)
 
 **Approach:**
 
