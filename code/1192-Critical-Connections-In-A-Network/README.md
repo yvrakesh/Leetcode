@@ -2,7 +2,7 @@
 
     Accepted        122,726
     Submissions     237,326
-[Question Link](https://leetcode.com/problems/critical-connections-in-a-network/)&emsp;[Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/1192/sol.cpp)
+[Question Link](https://leetcode.com/problems/critical-connections-in-a-network/)&emsp;[Solution Link](https://github.com/yvrakesh/Leetcode/blob/main/code/1192-Critical-Connections-In-A-Network/sol.cpp)
 
 **Use case of this Question**:
 
