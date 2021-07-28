@@ -1,0 +1,6 @@
+# Leetcode
+Leetcode Questions Practice - Arrays
+
+|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|
+| - | - | - | - | - |  - | - | - |
+|200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" width="27" title="Solution" />](https://github.com/yvrakesh/Leetcode/tree/main/code/0200-Number-Of-Islands)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg" width="27" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Medium](https://img.shields.io/badge/-Medium-orange)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Medium)|[![Array](https://img.shields.io/badge/-Array-blue)](https://github.com/yvrakesh/Leetcode/tree/main/tag/Array) [![DFS](https://img.shields.io/badge/-DFS-blue)](https://github.com/yvrakesh/Leetcode/tree/main/tag/DFS) [![BFS](https://img.shields.io/badge/-BFS-blue)](https://github.com/yvrakesh/Leetcode/tree/main/tag/BFS) [![Union Find](https://img.shields.io/badge/-Union%20Find-blue)](https://github.com/yvrakesh/Leetcode/tree/main/tag/Union-Find) [![Matrix](https://img.shields.io/badge/-Matrix-blue)](https://github.com/yvrakesh/Leetcode/tree/main/tag/Matrix)|50.7%|97.3%|
