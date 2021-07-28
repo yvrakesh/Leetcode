@@ -1,5 +1,5 @@
 # Leetcode
-Leetcode Questions Practice - Arrays
+Leetcode Questions Practice - Geometry
 
 |#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|
 | - | - | - | - | - |  - | - | - |
