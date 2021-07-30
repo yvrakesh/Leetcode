@@ -5,7 +5,7 @@ string camel_case_converter(string s, bool hyphen, bool only_hyphen = 0){
     if(!only_hyphen)
         s[0] = toupper(s[0]);
     for (int i = 0; i < n; i++) {
-        if (s[i] == ' ') {
+        if (s[i] == ' '){
             if(hyphen)
                 s[i] = '-';
             if(!only_hyphen)
@@ -15,8 +15,7 @@ string camel_case_converter(string s, bool hyphen, bool only_hyphen = 0){
     }
     return s;
 }
-string replaceSpaces(string input)
-{
+string replaceSpaces(string input){
     string rep = "%20";
     input[0] = toupper(input[0]);
     for(int i=1 ; i<input.length() ; i++){
@@ -80,12 +79,13 @@ int main(){
     str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code/";
     str_to_append += sol_url_substr + ")|";
     difficulty_level = camel_case_converter(difficulty_level,0);
+    str_to_append += "|[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg\" width=\"27\" title=\"Amazon\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|";
     if(difficulty_level == "Medium")
-        str_to_append += "[![Medium](https://img.shields.io/badge/-Medium-orange)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Medium)|";
+        str_to_append += "[![Medium](https://img.shields.io/badge/-Medium-darkgreen)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Medium)|";
     else if(difficulty_level == "Hard")
-        str_to_append += "[![Hard](https://img.shields.io/badge/-Hard-red)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Hard)|";
+        str_to_append += "[![Hard](https://img.shields.io/badge/-Hard-darkred)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Hard)|";
     else
-        str_to_append += "[![Easy](https://img.shields.io/badge/-Easy-brightgreen)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Easy)|";
+        str_to_append += "[![Easy](https://img.shields.io/badge/-Easy-blue)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Easy)|";
     cout<<"Enter Tags by ', ' seperation: ";
     getchar();
     string str;
@@ -103,7 +103,8 @@ int main(){
     }
     v.push_back(temp_str);
     for(auto i:v)
-            str_to_append += "[!["+camel_case_converter(i,0)+"](https://img.shields.io/badge/-"+replaceSpaces(i)+"-blue)](https://github.com/yvrakesh/Leetcode/tree/main/tag/"+camel_case_converter(i,1)+") ";
+            str_to_append += "["+camel_case_converter(i,0)+"](https://github.com/yvrakesh/Leetcode/tree/main/tag/"+camel_case_converter(i,1)+"), ";
+    replace(str_to_append,", |","|");
     float acpt_percent, like_percent;
     int likes, dislikes;
     cout<<"Enter Acceptance Percentage: ";
@@ -128,12 +129,9 @@ int main(){
     while(fin){
         string line;
         getline(fin, line);
-        if(i++ > 4)
+        if(i++ > 4 && line.compare(""))
             readme_file.push_back("\n"+line);
     }
-    replace(str_to_append,"|[![Hard]","|[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg\" width=\"27\" title=\"Amazon\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Hard]");
-    replace(str_to_append,"|[![Medium]","|[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg\" width=\"27\" title=\"Amazon\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Medium]");
-    replace(str_to_append,"|[![Easy]","|[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg\" width=\"27\" title=\"Amazon\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Easy]");
     readme_file.push_back(str_to_append);
     sort(readme_file.begin(),readme_file.end(),comparison);
     ofstream out1;
@@ -141,5 +139,43 @@ int main(){
     out1<<"# Leetcode\nLeetcode Questions Practice\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
     for(auto i:readme_file)
         out1<<i;
+    // Updating tag folders
+    for(auto i:v){
+        ifstream fin1;
+        fin1.open("tag/"+camel_case_converter(i,1)+"/README.md");
+        vector <string> temp;
+        int j = 0;
+        while(fin1){
+            string line;
+            getline(fin1,line);
+            if(j++ > 4 && line.compare(""))
+                temp.push_back("\n"+line);
+        }
+        temp.push_back(str_to_append);
+        sort(temp.begin(),temp.end(),comparison);
+        ofstream out2;
+        out2.open("tag/"+camel_case_converter(i,1)+"/README.md",ios::trunc);
+        out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(i,0)+"\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
+        for(auto i:temp)
+            out2<<i;
+    }
+    // Updating difficulty level folders
+    ifstream fin1;
+    fin1.open("difficulty/"+camel_case_converter(difficulty_level,0)+"/README.md");
+    vector <string> temp;
+    int j = 0;
+    while(fin1){
+        string line;
+        getline(fin1,line);
+        if(j++ > 4 && line.compare(""))
+            temp.push_back("\n"+line);
+    }
+    temp.push_back(str_to_append);
+    sort(temp.begin(),temp.end(),comparison);
+    ofstream out2;
+    out2.open("difficulty/"+camel_case_converter(difficulty_level,0)+"/README.md",ios::trunc);
+    out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(difficulty_level,1)+"\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
+    for(auto i:temp)
+        out2<<i;
     return 0;
 }
