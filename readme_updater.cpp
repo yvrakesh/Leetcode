@@ -66,7 +66,7 @@ int main(){
     string sol_url_substr = "";
     if(file_number < 10)
         sol_url_substr = "000"+to_string(file_number);
-    if(file_number < 100)
+    else if(file_number < 100)
         sol_url_substr = "00"+to_string(file_number);
     else if(file_number < 1000)
         sol_url_substr = "0" + to_string(file_number);
