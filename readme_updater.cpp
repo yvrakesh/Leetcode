@@ -148,14 +148,14 @@ int main(){
         while(fin1){
             string line;
             getline(fin1,line);
-            if(j++ > 4 && line.compare(""))
+            if(j++ > 6 && line.compare(""))
                 temp.push_back("\n"+line);
         }
         temp.push_back(str_to_append);
         sort(temp.begin(),temp.end(),comparison);
         ofstream out2;
         out2.open("tag/"+camel_case_converter(i,1)+"/README.md",ios::trunc);
-        out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(i,0)+"\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
+        out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(i,0)+"\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
         for(auto i:temp)
             out2<<i;
     }
@@ -167,14 +167,14 @@ int main(){
     while(fin1){
         string line;
         getline(fin1,line);
-        if(j++ > 4 && line.compare(""))
+        if(j++ > 6 && line.compare(""))
             temp.push_back("\n"+line);
     }
     temp.push_back(str_to_append);
     sort(temp.begin(),temp.end(),comparison);
     ofstream out2;
     out2.open("difficulty/"+camel_case_converter(difficulty_level,0)+"/README.md",ios::trunc);
-    out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(difficulty_level,1)+"\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
+    out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(difficulty_level,1)+"\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
     for(auto i:temp)
         out2<<i;
     return 0;
