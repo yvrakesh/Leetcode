@@ -2,7 +2,7 @@
 
     Accepted        2,077,800
     Submissions     5,694,937
-[Question Link](https://leetcode.com/problems/add-two-numbers/) &emsp;[Solution 1](https://github.com/yvrakesh/Leetcode/blob/main/code/0001-Two-Sum/sol1.cpp) &emsp; [Solution 2](https://github.com/yvrakesh/Leetcode/blob/main/code/0001-Two-Sum/sol2.cpp)
+[Question Link](https://leetcode.com/problems/add-two-numbers/) &emsp;[Solution 1](https://github.com/yvrakesh/Leetcode/blob/main/code/0002-Add-Two-Numbers/sol1.cpp) &emsp; [Solution 2](https://github.com/yvrakesh/Leetcode/blob/main/code/0002-Add-Two-Numbers/sol2.cpp)
 
 Brute Force Approach:
 
