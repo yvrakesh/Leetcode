@@ -1,5 +1,5 @@
 # Leetcode
-Leetcode Questions Practice
+Leetcode Questions Practice - Medium
 
 |#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|
 | - | - | - | - | - |  - | - | - |
