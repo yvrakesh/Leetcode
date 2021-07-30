@@ -1,6 +1,8 @@
 # Leetcode
 Leetcode Questions Practice - Merge Sort
 
+Click on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.
+
 |#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|
 | - | - | - | - | - |  - | - | - |
 |23|[Merge K Sorted Links](https://leetcode.com/problems/merge-k-sorted-lists/)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" width="27" title="Solution" />](https://github.com/yvrakesh/Leetcode/tree/main/code/0023-Merge-K-Sorted-Lists)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg" width="27" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Hard](https://img.shields.io/badge/-Hard-darkred)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Hard)|[Linked List](https://github.com/yvrakesh/Leetcode/tree/main/tag/Linked-List),  [Divide And Conquer](https://github.com/yvrakesh/Leetcode/tree/main/tag/Divide-And-Conquer),  [Priority Queue](https://github.com/yvrakesh/Leetcode/tree/main/tag/Priority-Queue),  [Merge Sort](https://github.com/yvrakesh/Leetcode/tree/main/tag/Merge-Sort)|44.1%|95.6%|

@@ -1,6 +1,9 @@
 # Leetcode
-Leetcode Questions Practice - Arrays
+Leetcode Questions Practice - Stack
+
+Click on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.
 
 |#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|
 | - | - | - | - | - |  - | - | - |
+|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" width="27" title="Solution" />](https://github.com/yvrakesh/Leetcode/tree/main/code/0020-Valid-Parentheses)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg" width="27" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Easy](https://img.shields.io/badge/-Easy-blue)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Easy)|[String](https://github.com/yvrakesh/Leetcode/tree/main/tag/String), [Stack](https://github.com/yvrakesh/Leetcode/tree/main/tag/Stack), |40.3%|96.1%|
 |42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" width="27" title="Solution" />](https://github.com/yvrakesh/Leetcode/tree/main/code/0042-Trapping-Rain-Water)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg" width="27" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Hard](https://img.shields.io/badge/-Hard-darkred)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Hard)|[Array](https://github.com/yvrakesh/Leetcode/tree/main/tag/Array), [Two Pointers](https://github.com/yvrakesh/Leetcode/tree/main/tag/Two-Pointers),  [DP](https://github.com/yvrakesh/Leetcode/tree/main/tag/DP),  [Stack](https://github.com/yvrakesh/Leetcode/tree/main/tag/Stack)|52.6%|98.6%|

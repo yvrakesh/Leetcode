@@ -1,6 +1,8 @@
 # Leetcode
 Leetcode Questions Practice - Arrays
 
+Click on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.
+
 |#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|
 | - | - | - | - | - |  - | - | - |
 |937|[Reorder Data in Log Files](https://leetcode.com/problems/reorder-data-in-log-files/)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" width="27" title="Solution" />](https://github.com/yvrakesh/Leetcode/tree/main/code/0937-Reorder-Data-In-Log-Files)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg" width="27" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Easy](https://img.shields.io/badge/-Easy-blue)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Easy)|[Array](https://github.com/yvrakesh/Leetcode/tree/main/tag/Array), [String](https://github.com/yvrakesh/Leetcode/tree/main/tag/String),  [Sorting](https://github.com/yvrakesh/Leetcode/tree/main/tag/Sorting)|55.2%|28.0%|
