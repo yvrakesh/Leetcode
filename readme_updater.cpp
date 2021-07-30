@@ -129,14 +129,14 @@ int main(){
     while(fin){
         string line;
         getline(fin, line);
-        if(i++ > 4 && line.compare(""))
+        if(i++ > 6 && line.compare(""))
             readme_file.push_back("\n"+line);
     }
     readme_file.push_back(str_to_append);
     sort(readme_file.begin(),readme_file.end(),comparison);
     ofstream out1;
     out1.open("README.md",ios::trunc);
-    out1<<"# Leetcode\nLeetcode Questions Practice\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
+    out1<<"# Leetcode\nLeetcode Questions Practice\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
     for(auto i:readme_file)
         out1<<i;
     // Updating tag folders
