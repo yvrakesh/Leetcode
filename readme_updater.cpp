@@ -79,7 +79,7 @@ int main(){
     str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code/";
     str_to_append += sol_url_substr + ")|";
     difficulty_level = camel_case_converter(difficulty_level,0);
-    str_to_append += "|[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg\" width=\"27\" title=\"Amazon\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|";
+    str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg\" width=\"27\" title=\"Amazon\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|";
     if(difficulty_level == "Medium")
         str_to_append += "[![Medium](https://img.shields.io/badge/-Medium-darkgreen)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Medium)|";
     else if(difficulty_level == "Hard")
