@@ -102,9 +102,11 @@ int main(){
             temp_str += str[i];
     }
     v.push_back(temp_str);
-    for(auto i:v)
-            str_to_append += "["+camel_case_converter(i,0)+"](https://github.com/yvrakesh/Leetcode/tree/main/tag/"+camel_case_converter(i,1)+"), ";
-    replace(str_to_append,", |","|");
+    for(int j = 0;j<v.size()-1;j++){
+        auto i = v[j];
+        str_to_append += "["+camel_case_converter(i,0)+"](https://github.com/yvrakesh/Leetcode/tree/main/tag/"+camel_case_converter(i,1)+"), ";
+    }
+    str_to_append += "["+camel_case_converter(v[v.size()-1],0)+"](https://github.com/yvrakesh/Leetcode/tree/main/tag/"+camel_case_converter(v[v.size()-1],1)+")";
     float acpt_percent, like_percent;
     int likes, dislikes;
     cout<<"Enter Acceptance Percentage: ";
