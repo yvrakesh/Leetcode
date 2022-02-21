@@ -141,6 +141,8 @@ int main(){
     }
     str_to_append += "["+camel_case_converter(v[v.size()-1],0)+"](https://github.com/yvrakesh/Leetcode/tree/main/tag/"+camel_case_converter(v[v.size()-1],1)+")";
     cout<<"String to append is "<<str_to_append<<endl;
+    string str_for_readme = str_to_append;
+    replace(str_for_readme,"../../","");
     int flag;
     cout<<"Enter 0 to stop, anything else to proceed"<<endl;
     cin>>flag;
@@ -163,9 +165,7 @@ int main(){
         if(i++ > 6 && line.compare(""))
             readme_file.push_back("\n"+line);
     }
-    string str_for_readme = str_to_append;
-    replace(str_for_readme,"../../","");
-    readme_file.push_back(str_to_append);
+    readme_file.push_back(str_for_readme);
     sort(readme_file.begin(),readme_file.end(),comparison);
     ofstream out1;
     out1.open("README.md",ios::trunc);
