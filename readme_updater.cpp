@@ -142,7 +142,8 @@ int main(){
     str_to_append += "["+camel_case_converter(v[v.size()-1],0)+"](https://github.com/yvrakesh/Leetcode/tree/main/tag/"+camel_case_converter(v[v.size()-1],1)+")";
     cout<<"String to append is "<<str_to_append<<endl;
     string str_for_readme = str_to_append;
-    replace(str_for_readme,"../../","");
+    while(replace(str_for_readme,"../../",""));
+    cout<<str_for_readme<<endl;
     int flag;
     cout<<"Enter 0 to stop, anything else to proceed"<<endl;
     cin>>flag;
