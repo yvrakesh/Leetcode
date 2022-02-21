@@ -75,17 +75,17 @@ int main(){
     str_to_append += to_string(file_number);
     str_to_append += "|[" + camel_case_converter(url_substring,0) + "](https://leetcode.com/problems/" + camel_case_converter(url_substring,1,1) + "/)|";
     if(file_number <= 500)
-        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-0001-to-0499/";
+        str_to_append += "[<img src=\"images/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-0001-to-0499/";
     else if(file_number <= 999)
-        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-0500-to-0999/";
+        str_to_append += "[<img src=\"images/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-0500-to-0999/";
     else if(file_number <= 1499)
-        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-1000-to-1499/";
+        str_to_append += "[<img src=\"images/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-1000-to-1499/";
     else if(file_number <= 1999)
-        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-1500-to-1999/";
+        str_to_append += "[<img src=\"images/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-1500-to-1999/";
     else if(file_number <= 2499)
-        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-2000-to-2499/";
+        str_to_append += "[<img src=\"images/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-2000-to-2499/";
     else if(file_number <= 2999)
-        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-2500-to-2999/";
+        str_to_append += "[<img src=\"images/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-2500-to-2999/";
 
     str_to_append += sol_url_substr + ")|";
     difficulty_level = camel_case_converter(difficulty_level,0);
@@ -106,15 +106,15 @@ int main(){
     }
     c.push_back(temp_str);
     for(auto i:c){
-        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/"+i+".svg\" width=\"27\" title=\""+camel_case_converter(i,0)+"\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/"+camel_case_converter(i,1)+")&nbsp; ";
+        str_to_append += "[<img src=\"images/"+i+".svg\" width=\"27\" title=\""+camel_case_converter(i,0)+"\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/"+camel_case_converter(i,1)+")&nbsp; ";
     }
     str_to_append += "|";
     if(difficulty_level == "Medium")
-        str_to_append += "[![Medium](https://img.shields.io/badge/-Medium-blue)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Medium)|";
+        str_to_append += "[![Medium](images/MediumBlue.svg)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Medium)|";
     else if(difficulty_level == "Hard")
-        str_to_append += "[![Hard](https://img.shields.io/badge/-Hard-red)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Hard)|";
+        str_to_append += "[![Hard](images/HardRed.svg)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Hard)|";
     else
-        str_to_append += "[![Easy](https://img.shields.io/badge/-Easy-brightgreen)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Easy)|";
+        str_to_append += "[![Easy](images/EasyGreen.svg)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Easy)|";
     cout<<"Enter Tags by Comma space seperation: ";
     getline(cin,str2);
     temp_str = "";
