@@ -1,8 +1,7 @@
 # Leetcode
-Leetcode Questions Practice - Arrays
+Leetcode Questions Practice - Graph
 
 Click on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.
 
-|#|Title|Sol|Companies|Difficulty|Tags|
-| - | - | - | - | - |  - | 
-|1192|[Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" width="27" title="Solution" />](https://github.com/yvrakesh/Leetcode/tree/main/code/1192-Critical-Connections-In-A-Network)|[<img src="https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg" width="27" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|[![Hard](https://img.shields.io/badge/-Hard-red)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Hard)|[DFS](https://github.com/yvrakesh/Leetcode/tree/main/tag/DFS),  [Graph](https://github.com/yvrakesh/Leetcode/tree/main/tag/Graph),  [Biconnected Components](https://github.com/yvrakesh/Leetcode/tree/main/tag/Biconnected-Components)|51.7%|95.6%|
+|#|Title|Sol|Companies|Difficulty|Time|Space|Tags|
+| - | - | - | - | - |  - | - | - |

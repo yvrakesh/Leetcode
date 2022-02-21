@@ -65,65 +65,94 @@ int main(){
     cin>>difficulty_level;
     string sol_url_substr = "";
     if(file_number < 10)
-        sol_url_substr = "000"+to_string(file_number);
-    else if(file_number < 100)
         sol_url_substr = "00"+to_string(file_number);
-    else if(file_number < 1000)
-        sol_url_substr = "0" + to_string(file_number);
+    else if(file_number < 100)
+        sol_url_substr = "0"+to_string(file_number);
     else
         sol_url_substr = to_string(file_number);
     sol_url_substr += "-" + camel_case_converter(url_substring,1);
     string str_to_append = "\n|";
     str_to_append += to_string(file_number);
     str_to_append += "|[" + camel_case_converter(url_substring,0) + "](https://leetcode.com/problems/" + camel_case_converter(url_substring,1,1) + "/)|";
-    str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code/";
+    if(file_number <= 500)
+        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-0001-to-0499/";
+    else if(file_number <= 999)
+        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-0500-to-0999/";
+    else if(file_number <= 1499)
+        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-1000-to-1499/";
+    else if(file_number <= 1999)
+        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-1500-to-1999/";
+    else if(file_number <= 2499)
+        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-2000-to-2499/";
+    else if(file_number <= 2999)
+        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/github.svg\" width=\"27\" title=\"Solution\" />](https://github.com/yvrakesh/Leetcode/tree/main/code-2500-to-2999/";
+
     str_to_append += sol_url_substr + ")|";
     difficulty_level = camel_case_converter(difficulty_level,0);
-    str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/amazon.svg\" width=\"27\" title=\"Amazon\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)|";
+    cout<<"Enter Company by Comma Space Seperation: ";
+    string str1, str2;
+    vector <string> c,v;
+    string temp_str = "";
+    getchar();
+    getline(cin,str1);
+    for(int i=0;i<str1.length();i++){
+        if(str1[i] == ','){
+            c.push_back(temp_str);
+            i++;
+            temp_str = "";
+        }
+        else
+            temp_str += str1[i];
+    }
+    c.push_back(temp_str);
+    for(auto i:c){
+        str_to_append += "[<img src=\"https://edent.github.io/SuperTinyIcons/images/svg/"+i+".svg\" width=\"27\" title=\""+camel_case_converter(i,0)+"\" />](https://github.com/yvrakesh/Leetcode/tree/main/company/"+camel_case_converter(i,1)+")&nbsp; ";
+    }
+    str_to_append += "|";
     if(difficulty_level == "Medium")
         str_to_append += "[![Medium](https://img.shields.io/badge/-Medium-blue)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Medium)|";
     else if(difficulty_level == "Hard")
         str_to_append += "[![Hard](https://img.shields.io/badge/-Hard-red)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Hard)|";
     else
         str_to_append += "[![Easy](https://img.shields.io/badge/-Easy-brightgreen)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Easy)|";
-    cout<<"Enter Tags by ', ' seperation: ";
-    getchar();
-    string str;
-    getline(cin,str);
-    vector <string> v;
-    string temp_str = "";
-    for(int i=0;i<str.length();i++){
-        if(str[i] == ','){
+    cout<<"Enter Tags by Comma space seperation: ";
+    getline(cin,str2);
+    temp_str = "";
+    for(int i=0;i<str2.length();i++){
+        if(str2[i] == ','){
             v.push_back(temp_str);
             i++;
             temp_str = "";
         }
         else
-            temp_str += str[i];
+            temp_str += str2[i];
     }
     v.push_back(temp_str);
+    string time_comp, space_comp;
+    cout<<"Enter Time Complexity: ";
+    cin>>time_comp;
+    str_to_append += "O(" + time_comp + ")";
+    cout<<"Enter Space Complexity: ";
+    cin>>space_comp;
+    str_to_append += "|O(" + space_comp + ")|";
     for(int j = 0;j<v.size()-1;j++){
         auto i = v[j];
         str_to_append += "["+camel_case_converter(i,0)+"](https://github.com/yvrakesh/Leetcode/tree/main/tag/"+camel_case_converter(i,1)+"), ";
     }
     str_to_append += "["+camel_case_converter(v[v.size()-1],0)+"](https://github.com/yvrakesh/Leetcode/tree/main/tag/"+camel_case_converter(v[v.size()-1],1)+")";
-    float acpt_percent, like_percent;
-    int likes, dislikes;
-    cout<<"Enter Acceptance Percentage: ";
-    cin>>acpt_percent;
-    getchar();
-    cout<<"Enter Likes : ";
-    cin>>likes;
-    cout<<"Enter Dislikes : ";
-    cin>>dislikes;
-    like_percent = ((float)(likes*100))/(likes+dislikes);
-    char str_temp[100];
-    sprintf(str_temp, "|%.1f%%|%.1f%%|", acpt_percent,like_percent);
-    str_to_append += str_temp;
     cout<<"String to append is "<<str_to_append<<endl;
-    ofstream out;
-    out.open("company/Amazon/README.md", ios::app);
-    out<<str_to_append;
+    int flag;
+    cout<<"Enter 0 to stop, anything else to proceed"<<endl;
+    cin>>flag;
+    if(!flag){
+        cout<<"Terminating\n";
+        return 0;
+    }
+    for(auto i:c){
+        ofstream out;
+        out.open("company/"+camel_case_converter(i,1)+"/README.md", ios::app);
+        out<<str_to_append;
+    }
     ifstream fin;
     fin.open("README.md");
     vector <string> readme_file;
@@ -138,9 +167,10 @@ int main(){
     sort(readme_file.begin(),readme_file.end(),comparison);
     ofstream out1;
     out1.open("README.md",ios::trunc);
-    out1<<"# Leetcode\nLeetcode Questions Practice\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
+    out1<<"# Leetcode\nLeetcode Questions Practice\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Time|Space|Tags|\n| - | - | - | - | - |  - | - | - |";
     for(auto i:readme_file)
         out1<<i;
+    out1<<"|";
     // Updating tag folders
     for(auto i:v){
         ifstream fin1;
@@ -157,9 +187,10 @@ int main(){
         sort(temp.begin(),temp.end(),comparison);
         ofstream out2;
         out2.open("tag/"+camel_case_converter(i,1)+"/README.md",ios::trunc);
-        out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(i,0)+"\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
+        out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(i,0)+"\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Time|Space|Tags|\n| - | - | - | - | - |  - | - | - |";
         for(auto i:temp)
             out2<<i;
+        out2<<"|";
     }
     // Updating difficulty level folders
     ifstream fin1;
@@ -176,8 +207,9 @@ int main(){
     sort(temp.begin(),temp.end(),comparison);
     ofstream out2;
     out2.open("difficulty/"+camel_case_converter(difficulty_level,0)+"/README.md",ios::trunc);
-    out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(difficulty_level,1)+"\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Tags|Accptce|Likes|\n| - | - | - | - | - |  - | - | - |";
+    out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(difficulty_level,1)+"\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Time|Space|Tags|\n| - | - | - | - | - |  - | - | - |";
     for(auto i:temp)
-        out2<<i;
+       out2<<i;
+    out2<<"|";
     return 0;
 }
