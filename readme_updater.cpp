@@ -170,7 +170,7 @@ int main(){
     out1<<"# Leetcode\nLeetcode Questions Practice\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Time|Space|Tags|\n| - | - | - | - | - |  - | - | - |";
     for(auto i:readme_file)
         out1<<i;
-    out1<<"|";
+    // out1<<"|";
     // Updating tag folders
     for(auto i:v){
         ifstream fin1;
@@ -190,7 +190,7 @@ int main(){
         out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(i,0)+"\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Time|Space|Tags|\n| - | - | - | - | - |  - | - | - |";
         for(auto i:temp)
             out2<<i;
-        out2<<"|";
+        // out2<<"|";
     }
     // Updating difficulty level folders
     ifstream fin1;
@@ -210,6 +210,6 @@ int main(){
     out2<<"# Leetcode\nLeetcode Questions Practice - "+camel_case_converter(difficulty_level,1)+"\n\nClick on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.\n\n|#|Title|Sol|Companies|Difficulty|Time|Space|Tags|\n| - | - | - | - | - |  - | - | - |";
     for(auto i:temp)
        out2<<i;
-    out2<<"|";
+    // out2<<"|";
     return 0;
 }
