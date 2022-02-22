@@ -1,7 +1,9 @@
 # Leetcode
-Leetcode Questions Practice - Dp
+Leetcode Questions Practice - DP
 
 Click on difficulty buttons (Easy, Medium, Hard) or Tags or company to filter that category problems only.
 
 |#|Title|Sol|Companies|Difficulty|Time|Space|Tags|
 | - | - | - | - | - |  - | - | - |
+|5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[<img src="../../images/github.svg" width="27" title="Solution" />](https://github.com/yvrakesh/Leetcode/tree/main/code-0001-to-0499/005-Longest-Palindromic-Substring)|[<img src="../../images/amazon.svg" width="27" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)&nbsp; |[![Medium](../../images/MediumBlue.svg)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Medium)|O(n^2)|O(n^2)|[String](https://github.com/yvrakesh/Leetcode/tree/main/tag/String), [DP](https://github.com/yvrakesh/Leetcode/tree/main/tag/DP)
+|42|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)|[<img src="../../images/github.svg" width="27" title="Solution" />](https://github.com/yvrakesh/Leetcode/tree/main/code-0001-to-0499/042-Trapping-Rain-Water)|[<img src="../../images/amazon.svg" width="27" title="Amazon" />](https://github.com/yvrakesh/Leetcode/tree/main/company/Amazon)&nbsp; |[![Hard](../../images/HardRed.svg)](https://github.com/yvrakesh/Leetcode/tree/main/difficulty/Hard)|O(n)|O(1)|[Array](https://github.com/yvrakesh/Leetcode/tree/main/tag/Array), [Two Pointers](https://github.com/yvrakesh/Leetcode/tree/main/tag/Two-Pointers), [DP](https://github.com/yvrakesh/Leetcode/tree/main/tag/DP), [Stack](https://github.com/yvrakesh/Leetcode/tree/main/tag/Stack)
